@@ -1,0 +1,12 @@
+build/
+build-debug/
+*.gguf
+*.bin
+*.safetensors
+*.npy
+__pycache__/
+build-log.txt
+bekci/target/
+*.nsys-rep
+*.sqlite
+*.log

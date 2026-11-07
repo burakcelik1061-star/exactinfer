@@ -1,0 +1,20 @@
+[package]
+name = "bekci"
+version = "0.1.0"
+edition = "2021"
+description = "engine-lab bekçi katmanı: modelin araç çağrılarını doğrular, onaya bağlar ve kaydeder"
+publish = false
+
+[dependencies]
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+toml = "0.8"
+
+[target.'cfg(windows)'.dependencies]
+windows-sys = { version = "0.59", features = [
+    "Win32_Foundation",
+    "Win32_Security_Cryptography",
+    "Win32_UI_Input_KeyboardAndMouse",
+    "Win32_UI_Shell",
+    "Win32_UI_WindowsAndMessaging",
+] }
