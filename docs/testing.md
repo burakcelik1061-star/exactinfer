@@ -25,5 +25,5 @@ Requirements:
 | `python tests\e2e_bekci.py [--backend cpu]` | built guard | engine writes real calls, guard judges them | 6/6 |
 | `cargo test --manifest-path bekci\Cargo.toml` | Rust | guard unit, attack and protocol tests | all pass |
 
-GPU speed results on a laptop depend on temperature. To compare two builds, alternate them run by run
+GPU speed results depend on temperature. To compare two builds, alternate them run by run
 ([performance.md](performance.md#measurement-methodology)).

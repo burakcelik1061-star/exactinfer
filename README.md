@@ -13,7 +13,7 @@ results, schema-guaranteed tool calls, and a separate Rust guard that decides wh
 
 llama.cpp/Ollama is the right choice for general local inference: it is faster at prompt processing, supports many
 models and runs everywhere. exactinfer answers a narrower question: **can a local model that controls a computer be
-exact, auditable and safe by construction, on a 6 GB laptop GPU?**
+exact, auditable and safe by construction, on a 6 GB consumer GPU?**
 
 | | llama.cpp / Ollama | exactinfer |
 |---|---|---|
@@ -29,7 +29,7 @@ exactinfer 61/62. The difference is in what can be *proven* about the output and
 
 ## Results at a glance
 
-Measured on an RTX 2060 6 GB laptop (Ryzen 5 5600X, Windows 11), same GGUF files as Ollama.
+Measured on an RTX 2060 6 GB desktop PC (Ryzen 5 5600X, Windows 11), same GGUF files as Ollama.
 
 | Claim | Number | Verify with | Details |
 |---|---|---|---|

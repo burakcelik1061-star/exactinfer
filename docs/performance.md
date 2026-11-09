@@ -1,6 +1,6 @@
 # Performance
 
-All numbers below were measured on a laptop: RTX 2060 6 GB (sm_75, 336 GB/s), Ryzen 5 5600X, Windows 11. Same GGUF
+All numbers below were measured on a desktop PC: RTX 2060 6 GB (sm_75, 336 GB/s), Ryzen 5 5600X, Windows 11. Same GGUF
 file and same GPU for engine and Ollama. Medians; ranges are GPU clock variation between runs (see
 [methodology](#measurement-methodology)).
 
@@ -91,7 +91,7 @@ attention kernels give the same tokens (max \|Δlogprob\| 1.6e-5 vs the tiled ke
 
 ## Measurement methodology
 
-On this laptop the GPU clock drifts with temperature: the same binary gave 1 130 and 1 010 tok/s ten minutes apart.
+On this machine the GPU clock drifts with temperature: the same binary gave 1 130 and 1 010 tok/s ten minutes apart.
 Sequential "before, then after" runs are therefore misleading; an early "+11%" for `ldmatrix` turned out to be drift,
 and the real ratio was 0.99. Speed comparisons alternate the two binaries run by run (interleaved A/B) and compare
 medians of the pairs.
