@@ -112,4 +112,4 @@ For a resident process, `el serve` speaks JSON lines with prefix KV reuse, sampl
 
 ## License
 
-No license has been chosen yet; until one is added, all rights are reserved.
+Copyright © 2026 Burak Çelik. Released under the [MIT License](LICENSE). The Qwen3 model weights are not part of this repository and are under their own license.
